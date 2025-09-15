@@ -11,11 +11,11 @@ import java.util.Optional;
 import static org.assertj.core.api.Assertions.*;
 
 public class MemoryMemberRepositoryTest {
-    MemberRepository repository = new MemoryMemberRepository();
+    MemoryMemberRepository repository = new MemoryMemberRepository();
 
     @AfterEach  //@작업이 끝나고 시행할 코드
     public void afterEach(){
-        
+        repository.clearStore();    //repository 지워놔야 순서상관없이 테스트 가능
     }
 
     @Test
