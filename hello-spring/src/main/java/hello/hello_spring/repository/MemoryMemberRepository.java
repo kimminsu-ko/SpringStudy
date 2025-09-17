@@ -1,9 +1,11 @@
 package hello.hello_spring.repository;
 
 import hello.hello_spring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository //repository를 사용해 의존관계 형성
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long,Member> store = new HashMap<>();
