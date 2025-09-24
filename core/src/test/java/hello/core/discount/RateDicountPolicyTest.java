@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.*;
 
 class RateDicountPolicyTest {
 
-    RateDicountPolicy discountPolicy = new RateDicountPolicy();
+    RateDiscountPolicy discountPolicy = new RateDiscountPolicy();
     @Test
     @DisplayName("VIP는 10% 할인이 적용 되어야 한다.")
     void vip_o(){
